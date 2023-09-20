@@ -61,9 +61,22 @@ section {
 
 section h2 {
   margin: 10px;
+  text-align: right;
+  font-size: 40px;
 }
 
-section li a {
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+#about-me p {
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 10px 20px 20px 20px;
+}
+
+#contact-me li a {
   color: black;
   font-size: 25px;
   padding: 10px;
