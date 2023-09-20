@@ -4,8 +4,12 @@
   padding: 0;
 }
 
-h1, h2 {
+h1, h2, p {
   font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', sans-serif;
+}
+
+hr {
+  border: 2px solid black;
 }
 
 header {
@@ -26,7 +30,7 @@ nav {
   display: flex;
 }
 
-nav ul {
+ul {
   display: flex; /* Works like inline */
   margin: 10px;
   list-style: none;
@@ -43,3 +47,26 @@ nav a {
   padding: 10px;
   font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', sans-serif;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: beige;
+}
+
+section {
+  display: flex;
+}
+
+section h2 {
+  margin: 10px;
+}
+
+section li a {
+  color: black;
+  font-size: 25px;
+  padding: 10px;
+  font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', sans-serif;
+}
+
