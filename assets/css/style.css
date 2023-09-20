@@ -4,10 +4,13 @@
   padding: 0;
 }
 
+h1, h2 {
+  font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', sans-serif;
+}
+
 header {
   display: flex;
   background-color: rgb(68, 181, 252);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 10px;
   justify-content: space-between; /* separates h1 and nav evenly from each other */
 }
@@ -38,4 +41,5 @@ nav a {
   color: white;
   font-size: 25px;
   padding: 10px;
+  font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', sans-serif;
 }
