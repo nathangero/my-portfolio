@@ -1,3 +1,9 @@
+:root {
+  --border-color: black;
+
+  --border-radius: 10px
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -88,31 +94,25 @@ section header {
   font-size: 30px;
 }
 
-.first-card {
-  border: 3px solid black;
-  border-radius: 2%;
-  padding: 10px;
-  margin: 10px;
-  width: 100%;
-  min-width: 400px;
-  text-align: center;
-  flex: 0 1 80%;
-}
-
 .card {
-  border: 3px solid black;
-  border-radius: 2%;
+  border: 3px solid var(--border-color);
+  border-radius: var(--border-radius);
   text-align: center;
   padding: 10px;
   margin: 10px;
   flex: 0 1 40%;
 }
 
+.card header {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
 
-.card img,
-.first-card img {
+.card:first-child {
+  flex: 0 1 80%;
+}
+
+.card img {
   height: fit-content;
-  /* width: 100%; */
   min-width: 400px;
 }
 
