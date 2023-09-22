@@ -28,7 +28,8 @@ header {
 
 nav {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
   background-color: orange;
 }
 
@@ -83,6 +84,7 @@ section header {
 
 .description {
   margin: 3%;
+  font-size: 20px;
 }
 
 .card-container {
@@ -117,9 +119,9 @@ section header {
 }
 
 
-@media all and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   nav {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }
