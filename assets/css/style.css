@@ -10,7 +10,7 @@ body {
 
 header {
   display: flex;
-  background-color: rgb(68, 181, 252);
+  background-color: #44B5FC;
   padding: 10px;
   justify-content: space-between; /* separates h1 and nav evenly from each other */
   align-items: center;
