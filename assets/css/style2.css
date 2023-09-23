@@ -1,5 +1,6 @@
 :root {
-  --border-color: black;
+  --black: black;
+  --white: white;
 
   --border-radius: 10px
 }
@@ -17,13 +18,14 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
+  /* background-color: var(--black); */
 }
 
 header {
   padding: 40px;
   text-align: center;
   background: rgb(68, 181, 252);
-  color: #fff;
+  color: var(--white);
 }
 
 nav {
@@ -34,7 +36,7 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   padding: 15px 20px;
   font-size: 25px;
@@ -54,7 +56,7 @@ main {
 section h2 {
   text-align: center;
   background-color:  midnightblue;
-  color: white;
+  color: var(--white);
   padding: 10px;
 }
 
@@ -79,7 +81,7 @@ section header {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(--white);
 }
 
 
@@ -97,7 +99,7 @@ section header {
 }
 
 .card {
-  border: 3px solid var(--border-color);
+  border: 3px solid var(--black);
   border-radius: var(--border-radius);
   text-align: center;
   padding: 10px;
@@ -107,7 +109,10 @@ section header {
 
 .card header {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
-  font-size: 30px;
+}
+
+.card h3 {
+  font-size: 25px;
 }
 
 .card p {
@@ -121,6 +126,7 @@ section header {
 .card img {
   height: auto;
   max-width: 100%;
+  object-fit: contain;
 }
 
 
@@ -131,7 +137,7 @@ section header {
   }
 
   .card {
-    border: 3px solid var(--border-color);
+    border: 3px solid var(--black);
     border-radius: var(--border-radius);
     text-align: center;
     padding: 10px;
@@ -141,6 +147,10 @@ section header {
 
   .card:first-child {
     flex: 0 80%;
+  }
+
+  .card h3 {
+    font-size: 30px;
   }
 
   .card p {
