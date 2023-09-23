@@ -18,6 +18,7 @@
 
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -50,11 +51,6 @@ nav a {
   text-decoration: none;
   padding: 15px 20px;
   font-size: 25px;
-}
-
-nav a:hover {
-  background-color: var(--limegreen);
-  color: var(--black);
 }
 
 nav hr {
@@ -197,6 +193,12 @@ footer .email {
 
   nav hr {
     display: none; /* Make none to prevent weird spacing in nav */
+  }
+
+  /* Only display hover on wider screens */
+  nav a:hover {
+    background-color: var(--limegreen);
+    color: var(--black);
   }
 
   .hero-image .selfie {
