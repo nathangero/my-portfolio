@@ -59,13 +59,8 @@ nav a:hover {
 
 nav hr {
   background-color: var(--white);
-  border: 0.5px solid var(--nav-bar-hr-color);
+  border: 1px solid var(--nav-bar-hr-color);
   width: 100%;
-}
-
-img {
-  width: 50%;
-  height: 50%;
 }
 
 main {
@@ -98,6 +93,20 @@ footer a {
   padding: 15px 20px;
   font-size: 20px;
   height: 100%;
+}
+
+/* Keep image sizes reasonable */
+footer img {
+  padding: 0;
+  margin: 0;
+  width: 25%;
+  height: 25%;
+  object-fit: contain;
+}
+
+footer .email {
+  width: 70%;
+  height: 70%;
 }
 
 .hero-image {
@@ -138,7 +147,7 @@ footer a {
   text-align: center;
   padding: 10px;
   margin: 10px;
-  flex: 0 1 80%;
+  flex: 0 1 50%;
 }
 
 .card header {
@@ -154,7 +163,7 @@ footer a {
 }
 
 .card:first-child {
-  flex: 0 1 100%;
+  flex: 0 0 90%;
 }
 
 .card a {
@@ -188,11 +197,13 @@ footer a {
     text-align: center;
     padding: 10px;
     margin: 10px;
-    flex: 0 1 40%;
+    flex: 0 1 400px;
+    max-width: 40%;
   }
 
   .card:first-child {
-    flex: 0 80%;
+    flex: 0 0 100%;
+    min-width: 80%;
   }
 
   .card h3 {
@@ -204,6 +215,7 @@ footer a {
   }
 }
 
+/* Dark Theme */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--black);
