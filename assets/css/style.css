@@ -136,6 +136,8 @@ footer .email-img {
   padding: 10px;
   margin: 10px;
   flex: 0 1 50%;
+  max-width: 60%;
+  max-height: 50%;
 }
 
 .card header {
@@ -152,6 +154,7 @@ footer .email-img {
 
 .card:first-child {
   flex: 0 0 90%;
+  max-width: 90%;
 }
 
 .card a {
@@ -206,7 +209,13 @@ footer .email-img {
     margin-bottom: 15px; /* increase space before the .hero-text style */
   }
 
+  .card-container {
+    margin: 0 auto;
+  }
+
   .card {
+    display: flex;
+    flex-direction: column;
     border: 3px solid var(--black);
     border-radius: var(--border-radius);
     text-align: center;
@@ -217,8 +226,10 @@ footer .email-img {
   }
 
   .card:first-child {
-    flex: 0 0 100%;
-    min-width: 80%;
+    /* display: flex; */
+    flex: 0 0 50%;
+    margin: 10px 100%; /* make first child occupy the whole horizontal space to keep it on top of other .card children */
+    /* min-width: 40%; */
   }
 
   .card h3 {
@@ -227,6 +238,13 @@ footer .email-img {
 
   .card p {
     font-size: 30px;
+  }
+
+  .image-container-vertical {
+    display: flex;
+    height: auto;
+    max-width: 45%;
+    margin: 0 auto; /* center images */
   }
 }
 
