@@ -3,6 +3,7 @@
   --white: #ffffff;
   --light-blue: #44B5FC;
   --midnight-blue: #191970;
+  --limegreen: #1aff1a;
   --nav-bar-color: var(--light-blue);
   --nav-bar-hr-color: #049cfb;
 
@@ -51,6 +52,11 @@ nav a {
   font-size: 25px;
 }
 
+nav a:hover {
+  background-color: var(--limegreen);
+  color: var(--black);
+}
+
 nav hr {
   background-color: var(--white);
   border: 0.5px solid var(--nav-bar-hr-color);
@@ -82,14 +88,16 @@ section header {
 
 footer {
   display: flex;
+  padding: 0;
   width: 100%; /* Make footer full width */
   justify-content: space-evenly;
 }
 
 footer a {
   color: var(--white);
-  text-decoration: none;
+  padding: 15px 20px;
   font-size: 20px;
+  height: 100%;
 }
 
 .hero-image {
