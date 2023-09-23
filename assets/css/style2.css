@@ -18,7 +18,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
-  /* background-color: var(--black); */
 }
 
 header {
@@ -67,19 +66,15 @@ section header {
 
 footer {
   display: flex;
-  width: 100%;
+  width: 100%; /* Make footer full width */
   justify-content: space-evenly;
 }
 
 footer a {
   color: var(--white);
-  /* justify-content: space-evenly; */
-  /* padding-left: 10px;
-  padding-right: 10px; */
+  text-decoration: none;
   font-size: 20px;
 }
-
-
 
 .hero-image {
   height: 300px;
@@ -136,6 +131,14 @@ footer a {
 
 .card:first-child {
   flex: 0 1 100%;
+}
+
+.card a {
+  text-decoration: none; /* Remove underline from clickable link */
+}
+
+.card .image-container {
+  width: 100%; /* Allows image background to be clickable too */
 }
 
 .card img {
