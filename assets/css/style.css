@@ -16,12 +16,6 @@
   --border-dark: 3px solid var(--white);
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: 'Trebuchet MS', 'Gill Sans', 'Gill Sans MT', sans-serif;
   margin: 0;
