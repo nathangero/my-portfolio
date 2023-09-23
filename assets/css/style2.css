@@ -94,7 +94,6 @@ section header {
   flex: 4;
   margin-top: 1%;
   justify-content: center;
-  font-size: 30px;
 }
 
 .card {
@@ -103,15 +102,20 @@ section header {
   text-align: center;
   padding: 10px;
   margin: 10px;
-  flex: 0 1 40%;
+  flex: 0 1 80%;
 }
 
 .card header {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
+  font-size: 30px;
+}
+
+.card p {
+  font-size: 20px;
 }
 
 .card:first-child {
-  flex: 0 1 80%;
+  flex: 0 1 100%;
 }
 
 .card img {
@@ -124,5 +128,22 @@ section header {
   nav {
     flex-direction: row;
     justify-content: flex-end;
+  }
+
+  .card {
+    border: 3px solid var(--border-color);
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    flex: 0 1 40%;
+  }
+
+  .card:first-child {
+    flex: 0 80%;
+  }
+
+  .card p {
+    font-size: 30px;
   }
 }
