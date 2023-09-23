@@ -26,3 +26,7 @@ Portfolio can be found [here](https://nathangero.github.io/my-portfolio/)
 [GitHub logo](https://github.com/logos)
 
 [LinkedIn logo](https://brand.linkedin.com/content/brand/global/en_us/index/visual-identity/logo)
+
+[Image Styling #1](https://www.w3schools.com/css/css3_images.asp)
+
+[Image Styling #2](https://developer.mozilla.org/en-US/docs/Web/CSS/object-position)

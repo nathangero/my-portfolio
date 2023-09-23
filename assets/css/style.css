@@ -110,7 +110,7 @@ footer .email {
 }
 
 .hero-image {
-  height: 300px;
+  height: 400px;
   background-image: url("../images/pexels-pixabay-355887.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -127,6 +127,14 @@ footer .email {
   color: var(--white);
 }
 
+
+.hero-image .selfie {
+  border-radius: 100%;
+  height: 175px;
+  width: 175px;
+  object-fit: cover;
+  object-position: 50% 50%; /* centers image within constraints */
+}
 
 .description {
   margin: 3%;
@@ -189,6 +197,15 @@ footer .email {
 
   nav hr {
     display: none; /* Make none to prevent weird spacing in nav */
+  }
+
+  .hero-image .selfie {
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: 50% 50%; /* centers image within constraints */
+    margin-bottom: 15px; /* increase space before the .hero-text style */
   }
 
   .card {
