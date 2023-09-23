@@ -2,7 +2,13 @@
   --black: black;
   --white: white;
 
-  --border-radius: 10px
+  --border-radius: 10px;
+
+  /* Light mode */
+  --border-light: 3px solid var(--black);
+
+  /* Dark mode */
+  --border-dark: 3px solid var(--white);
 }
 
 * {
@@ -109,7 +115,7 @@ footer a {
 }
 
 .card {
-  border: 3px solid var(--black);
+  border: var(--border-light);
   border-radius: var(--border-radius);
   text-align: center;
   padding: 10px;
@@ -173,5 +179,28 @@ footer a {
 
   .card p {
     font-size: 30px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--black);
+  }
+
+  p {
+    color: var(--white);  
+  }
+  
+  .card {
+    border: var(--border-dark);
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    flex: 0 1 80%;
+  }
+
+  .card header {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
   }
 }
