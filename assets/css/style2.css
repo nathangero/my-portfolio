@@ -53,7 +53,7 @@ main {
   align-items: center;
 }
 
-section h2 {
+section h2, footer {
   text-align: center;
   background-color:  midnightblue;
   color: var(--white);
@@ -64,6 +64,21 @@ section header {
   background-color: #44B5FC;
   padding: 10px;
 }
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+footer a {
+  color: var(--white);
+  /* justify-content: space-evenly; */
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  font-size: 20px;
+}
+
 
 
 .hero-image {
