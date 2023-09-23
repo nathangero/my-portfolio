@@ -1,6 +1,10 @@
 :root {
-  --black: black;
-  --white: white;
+  --black: #000000;
+  --white: #ffffff;
+  --orange: #ffa500;
+  --dark-orange: #cc8500;
+  --light-blue: #44B5FC;
+  --midnight-blue: #191970;
 
   --border-radius: 10px;
 
@@ -37,7 +41,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: orange;
+  background-color: var(--orange);
 }
 
 nav a {
@@ -45,6 +49,12 @@ nav a {
   text-decoration: none;
   padding: 15px 20px;
   font-size: 25px;
+}
+
+nav hr {
+  background-color: var(--white);
+  border: 0.5px solid var(--dark-orange);
+  width: 100%;
 }
 
 img {
@@ -60,13 +70,13 @@ main {
 
 section h2, footer {
   text-align: center;
-  background-color:  midnightblue;
+  background-color:  var(--midnight-blue);
   color: var(--white);
   padding: 10px;
 }
 
 section header {
-  background-color: #44B5FC;
+  background-color: var(--light-blue);
   padding: 10px;
 }
 
@@ -158,6 +168,10 @@ footer a {
   nav {
     flex-direction: row;
     justify-content: flex-end;
+  }
+
+  nav hr {
+    display: none; /* Make none to prevent weird spacing in nav */
   }
 
   .card {
