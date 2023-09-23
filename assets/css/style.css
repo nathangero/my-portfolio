@@ -188,7 +188,7 @@ footer .email {
   object-fit: contain;
 }
 
-
+/* Accommodate for bigger screens */
 @media screen and (min-width: 768px) {
   nav {
     flex-direction: row;
@@ -232,8 +232,8 @@ footer .email {
   }
 }
 
-/* Dark Theme */
-@media (prefers-color-scheme: dark) {
+/* Dark Theme only allowed on mobile (for now)*/
+@media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
   body {
     background-color: var(--black);
   }
