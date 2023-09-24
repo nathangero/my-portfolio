@@ -10,27 +10,6 @@ I made this so I can showcase the work I'm proud of, and I hope that people will
 
 I've always wanted to make a website where people, like recruiters and friends, can see what I work on, and it's all gathered together in a neat little website.
 
-### Code Snippets
-
-
-Enable Mobile Dark Mode:
-```css
-@media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--black);
-  }
-
-  p {
-    color: var(--white);  
-  }
-  
-  .card {
-    border: var(--border-dark);
-    /* Other styling here */
-  }
-}
-```
-
 ### Website images
 
 Browser:
@@ -62,6 +41,25 @@ Using the website is pretty simple, you just scroll down the site to see the dif
 * Importance of pseudo elements like ```:first-child```. That's how I was able to make the first card under Work be on top and bigger at all times without making a separate class.
     * Meaning, in the future if I want another project to be at the top, I can easily make a new ```<section class="card"></section>``` at the top of ```<section class="card-container>``` and I won't have to make changes of any class naming.
 
+### Code Snippets
+
+Enable Mobile Dark Mode:
+```css
+@media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--black);
+  }
+
+  p {
+    color: var(--white);  
+  }
+  
+  .card {
+    border: var(--border-dark);
+    /* Other styling here */
+  }
+}
+```
 
 ## Credits
 
