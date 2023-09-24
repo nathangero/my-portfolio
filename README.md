@@ -10,14 +10,6 @@ I made this so I can showcase the work I'm proud of, and I hope that people will
 
 I've always wanted to make a website where people, like recruiters and friends, can see what I work on, and it's all gathered together in a neat little website.
 
-### A Little About the Site
-
-* This website was designed mobile first so I've created media queries to accommodate for bigger screens.
-* The mobile version of this site supports both light and dark mode (depends on the system settings). 
-* Browser only supports light mode. Will add dark mode in the future.
-    * This is because most browsers would default to dark mode even after changing the theme of the computer to light.
-* The first project under Work will always appear on top of the rest no matter the screen size.
-
 ### Code Snippets
 
 
@@ -34,7 +26,7 @@ Enable Mobile Dark Mode:
   
   .card {
     border: var(--border-dark);
-    /* Normal styling code here */
+    /* Other styling here */
   }
 }
 ```
@@ -53,8 +45,15 @@ Mobile:
 
 Using the website is pretty simple, you just scroll down the site to see the different sections. There's a navigation bar that will quickly jump you to the corresponding section. At the bottom there are links to different ways you can contact me. In the Work section, there are different cards that showcase the different apps and projects I've worked on. Clicking/tapping on a card will open a link to either the corresponding website or app store download.
 
+## Features
+
+* Dark mode works on both mobile and browser. Currently it's determined by the system's theme, so there's no on site toggle (yet).
+* The first project under Work will always appear on top of the rest no matter the screen size.
+* Clicking/tapping the nav bar will take the user to the corresponding section.
+
 ## Things I've Learned
 
+* Having a mobile first mindset really helps triage what would look best in a smaller screen, then using media queries to scale to larger sizes is easier. It's easier for me to go from smaller to bigger.
 * Using multiple "and" in @media queries (as seen [here](#code-snippets))
 * Usefulness of css variables for common styling like colors and border configurations.
 * Importance of having an organized css file.
@@ -64,7 +63,7 @@ Using the website is pretty simple, you just scroll down the site to see the dif
     * Meaning, in the future if I want another project to be at the top, I can easily make a new ```<section class="card"></section>``` at the top of ```<section class="card-container>``` and I won't have to make changes of any class naming.
 
 
-## Resources
+## Credits
 
 ### Code Resources
 
