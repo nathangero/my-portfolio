@@ -37,7 +37,7 @@ Using the website is pretty simple, you just scroll down the site to see the dif
 * Usefulness of css variables for common styling like colors and border configurations.
 * Importance of having an organized css file.
     * The order I had was: CSS variables, element selectors, class selectors, id selectors, media queries.
-    * In addition I learned how important which styles come first. For example, in my ```.card``` class I would define the style of the display type, border, margin, etc, and then below it I would explicitly adjust the ```font-size``` of ```.card p``` and even the ``` .card h3```
+    * In addition I learned how important which styles come first. For example, in my ```.card``` class I would define the style of the display type, border, margin, etc, and then below it I would explicitly adjust the ```font-size``` of ```.card p``` and even the ```.card h3```
 * Importance of pseudo elements like ```:first-child```. That's how I was able to make the first card under Work be on top and bigger at all times without making a separate class.
     * Meaning, in the future if I want another project to be at the top, I can easily make a new ```<section class="card"></section>``` at the top of ```<section class="card-container>``` and I won't have to make changes of any class naming.
 
