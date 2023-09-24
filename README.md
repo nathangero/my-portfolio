@@ -1,17 +1,5 @@
 # My Portfolio
 
-## Table of Contents
-
-[Description](#description)
-
-[Things I've Learned](#things-ive-learned)
-
-[Usage](#usage)
-
-[Resources](#resources)
-
-[License](#license)
-
 ## Description
 
 I'm Nathan Geronimo and this is a collection of apps and projects I've created and worked on!

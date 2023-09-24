@@ -150,6 +150,7 @@ footer .email-img {
 
 .card p {
   font-size: 20px;
+  padding-top: 10px;
 }
 
 .card:first-child {
@@ -248,7 +249,7 @@ footer .email-img {
   }
 }
 
-/* Dark Theme only allowed on mobile (for now)*/
+/* Dark Theme for mobile */
 @media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
   body {
     background-color: var(--black);
@@ -265,6 +266,33 @@ footer .email-img {
     padding: 10px;
     margin: 10px;
     flex: 0 1 80%;
+  }
+
+  .card header {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+}
+
+/* Dark Theme for browser */
+@media screen and (min-width: 768px) and (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--black);
+  }
+
+  p {
+    color: var(--white);  
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: var(--border-dark);
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    flex: 0 1 400px;
+    max-width: 40%;
   }
 
   .card header {
